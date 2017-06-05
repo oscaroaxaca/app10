@@ -1,0 +1,612 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>tercera Aplicacion</title>
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/tema-app11.min.css"/>
+<!--<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css"/> -->
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap/js"></script>
+<script type="text/javascript">
+
+
+
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/atlixco4.jpg','imagenes/exconv.jpg','imagenes/villa04.jpg','imagenes/viveros3.JPG','imagenes/viveros2.jpg','imagenes/arton25142.jpg','imagenes/hi2.jpg','imagenes/hi4.jpg','imagenes/maxresdefault.jpg','imagenes/oot.jpg','imagenes/juarez.JPG','imagenes/ghgf.jpg')">
+
+<div data-role="page" id="Principal">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Atlixco,Puebla</h1>
+<div align="center">
+  <!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/acuedcuto.jpg" alt="acuedcuto" id="wows1_0" title="acuedcuto"/></li>
+		<li><img src="data1/images/arton25142.jpg" alt="arton25142" title="arton25142" id="wows1_1"/></li>
+		<li><img src="data1/images/atlixco4.jpg" alt="atlixco4" title="atlixco4" id="wows1_2"/></li>
+		<li><img src="data1/images/atlixcodelasflorespueblomagicoquecelebraasucecina.jpg" alt="atlixco-de-las-flores-pueblo-magico-que-celebra-a-su-cecina" title="atlixco-de-las-flores-pueblo-magico-que-celebra-a-su-cecina" id="wows1_3"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/exconv.jpg" alt="wowslider" title="exconv" id="wows1_4"/></a></li>
+		<li><img src="data1/images/foto04.jpg" alt="foto04" title="foto04" id="wows1_5"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="acuedcuto"><span><img src="data1/tooltips/acuedcuto.jpg" alt="acuedcuto"/>1</span></a>
+		<a href="#" title="arton25142"><span><img src="data1/tooltips/arton25142.jpg" alt="arton25142"/>2</span></a>
+		<a href="#" title="atlixco4"><span><img src="data1/tooltips/atlixco4.jpg" alt="atlixco4"/>3</span></a>
+		<a href="#" title="atlixco-de-las-flores-pueblo-magico-que-celebra-a-su-cecina"><span><img src="data1/tooltips/atlixcodelasflorespueblomagicoquecelebraasucecina.jpg" alt="atlixco-de-las-flores-pueblo-magico-que-celebra-a-su-cecina"/>4</span></a>
+		<a href="#" title="exconv"><span><img src="data1/tooltips/exconv.jpg" alt="exconv"/>5</span></a>
+		<a href="#" title="foto04"><span><img src="data1/tooltips/foto04.jpg" alt="foto04"/>6</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">jquery slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+
+</div>
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Atlixco</h2>
+<p>Acerca de Atlixco</p>
+</a>
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cerro de San Miguel</h2>
+<p>Atractivo turistico</p>
+</a>
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Exconvento Franciscano</h2>
+<p>Templo</p>
+</a>
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Villa iluminada</h2>
+<p>Actiividad de navidad</p>
+</a>
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Viveros de plantas</h2>
+<p>Cabrera</p>
+</a>
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Historia</h2>
+<p>Historia de Atlixco</p>
+</a>
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Restaurantes</h2>
+<p>Algunos restaurantes recomendados</p>
+</a>
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Monumentos </h2>
+<p>Monumentos de Atlixco</p>
+</a>
+<a href="#Pagina9" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Creador de la App</h2>
+<p>Acerca del creador de la app</p>
+</a>
+</li>
+  </ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="res/android/mdpi.png" width="46" height="46">
+
+</div>
+<div>
+<h4> Guia turistica </h4>
+<h4>Oscar Oaxaca Telez</h4
+></div>
+</div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Atlixco</h1>
+<p>Heroica Atlixco (nahuatl) Acerca de este sonido) (en  nahuatl: atl, ixtlatl, co, &lsquo;agua, valle, lugar&rsquo;&lsquo;Lugar del valle de agua&rsquo;)  también conocido como «Atlixco de las flores», es un municipio que se localiza  al suroeste de la Ciudad de Puebla. Recibió su título de «Heroica»9 debido a la  Batalla del 4 de mayo de 1862 que precedería a la Batalla de Puebla del 5 de  mayo de 1862.</p>
+<p>Es conocido por su buen clima y la gran actividad  florística, comercial y turística que le valieron haber sido llamada Atlixco de  las Flores y Granero de la Nueva España, durante la época colonial.</p>
+<p>El último domingo de septiembre, en la explanada del cerro  de San Miguel, Atlixco se convierte en la sede de un festival en el que se  reúnen los representantes de las once regiones culturales del estado de Puebla,  festival que es llamado «Huey Atlixcáyotl» o Fiesta Grande de Atlixco y que es  patrimonio cultural del estado de Puebla.</p>
+<p>En 1884, el Congreso local decretó que la cabecera municipal  de Atlixco se llamara «Atlixco de Múgica y Osorio»; en honor al Benemérito del  Estado de Puebla, Juan Múgica y Osorio.</p>
+<p>&nbsp;</p>
+
+
+<div data-role="collapsible" data-content-theme="false">
+<h1 align="center">Imagen</h1>
+<div>
+<p align="center">Atlixco  : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('45383','','imagenes/arton25142.jpg',1)"><img src="imagenes/acuedcuto.jpg" width="305" height="275" id="45383" align="middle"></a></p>
+<div align="center"><br>
+</div>
+<div></div>
+</div>
+<p>&nbsp;</p>
+<div align="center">
+<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d3774.150377427152!2d-98.41954036448081!3d18.924736858197942!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x85cfb4402733cb55%3A0xc95ef3b2bc7ca3e0!2sAtlixco%2C+74210+Atlixco%2C+Pue.!3m2!1d18.9260533!2d-98.4204785!5e0!3m2!1ses!2smx!4v1496068704780" width="300" height="250" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+      <li class="ui-first-child ui-last-child"> </li>
+    </ul>
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+      <li class="ui-first-child ui-last-child"> </li>
+    </ul>
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+  <li class="ui-first-child ui-last-child">
+    <h2><a href="https://es.wikipedia.org/wiki/Atlixco" target="_self" data-role="button">Link fuente</a></h2>
+ 
+
+
+
+ 
+  </li>
+  </li>
+</ul>
+</div>
+</div>
+
+</div>
+
+</div>
+
+<div data-role="main" class="ui-content"> </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Cerro de San Miguel</h1>
+<p>También conocido como Popocatica (cerro que humea) o Macuilxochitpec (cerro de las cinco flores), es el lugar en donde se realiza la fiesta máxima de Atlixco que se lleva a cabo el último domingo de septiembre y para la que se reúnen los representantes de las once regiones culturales de Puebla. Pero aunque tu visita no coincida con la fecha, el lugar te ofrece una maravillosa vista panorámica y siempre puedes visitar la Capilla de San Miguel.</p>
+<p>&nbsp;</p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="https://www.zonaturistica.com/atractivo-turistico/1159/cerro-de-san-miguel-atlixco.html" target="_self" data-role="button" >
+<h2>Link fuente</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Cerro de San Miguel: </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('76','','imagenes/atlixco4.jpg',1)"><img src="imagenes/cerro.jpg" width="357" height="362" id="76" align="middle"></a></p>
+<br>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+<h1>Exconvento Franciscano </h1>
+<p>El ex-convento franciscano de Santa María de Jesús se ubica en el cerro de San Miguel, lugar ceremonial donde se celebra el Huey Atlixcayotl. Data del siglo XVI. Construido en dos periodos, el primero abarca de 1538 a 1550, el segundo de 1560 a 1620. Perteneció a los franciscanos, dedicado a evangelizar a los indígenas de la región. El conjunto arquitectónico lo forman un gran atrio, el templo y el convento. Tiene una puerta atrial con dos arcos y en la fachada los nichos del vía crucis. A mediados del siglo XIX fueron colocados en el templo parte de los bienes muebles de la iglesia del Carmen destacando entre ellos el retablo mayor que es considerado como uno de los más bellos que se ejecutaron en la Nueva España durante el siglo XVII.</p>
+<p>Es la primera fundación franciscana en el lugar que en el momento de la conquista española se llamó Acapetlahucán, que quiere decir; &ldquo;lugar donde se hacían esteras de caña seca&rdquo;, ubicada en las faldas del ahora cerro de San Miguel.</p>
+<p>Es durante el gobierno de la primera audiencia que fray Toribio de Benavente, &ldquo;Motolinia&rdquo;, funda entre los años de 1551 y 1562 el templo en una congregación de indios que había ayuntado fray Alonso de Buendía y lo dedica a la Visitación de Nuestra Señora.</p>
+<p>Cuentan con guía.</p>
+<p>&nbsp;</p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://puebla.travel/es/ver-hacer/sitios-de-interes/iglesias/item/ex-convento-franciscano-de-atlixco" target="_self" data-role="button" >
+<h2>Link fuente</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Exconvento : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('3','','imagenes/exconv.jpg',1)"><img src="imagenes/convent.jpg" width="321" height="333" id="3"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica </h4>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2><strong>En la Villa Iluminada en Atlixco, no olvides caminar por debajo del famoso arco del lugar</strong></h2>
+  <p>El recorrido empieza en el zócalo, donde la fachada del Palacio Municipal está adornada, al igual que los pinos y otros árboles. Voltea hacia todos lados de los edificios, que desde el piso hasta el techo estarán llenos de luces, muñecos navideños y paisajes representativos de Atlixco.</p>
+  <p>A la par encontrarás eventos culturales, artísticos, deportivos, conciertos y gastronomía. En el parque Revolución es donde se halla el mayor número de figuras; pasa por el callejón Constitución, el ex convento de El Carmen, la calle de Nicolás Bravo, el boulevar de Ferrocarriles y la calle Hidalgo.</p>
+  <h1>&nbsp;</h1>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/oot.jpg" alt="oot" title="oot" id="wows1_0"/></li>
+		<li><img src="data1/images/uminada.jpg" alt="uminada" title="uminada" id="wows1_1"/></li>
+		<li><img src="data1/images/vill.jpg" alt="Vill" title="Vill" id="wows1_2"/></li>
+		<li><img src="data1/images/villa04.jpg" alt="villa04" title="villa04" id="wows1_3"/></li>
+		<li><img src="data1/images/villis.jpg" alt="villis" title="villis" id="wows1_4"/></li>
+		<li><a href="http://wowslider.com/vi"><img src="data1/images/viveros.jpg" alt="slider" title="viveros" id="wows1_5"/></a></li>
+		<li><img src="data1/images/viveros2.jpg" alt="viveros2" title="viveros2" id="wows1_6"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="oot"><span><img src="data1/tooltips/oot.jpg" alt="oot"/>1</span></a>
+		<a href="#" title="uminada"><span><img src="data1/tooltips/uminada.jpg" alt="uminada"/>2</span></a>
+		<a href="#" title="Vill"><span><img src="data1/tooltips/vill.jpg" alt="Vill"/>3</span></a>
+		<a href="#" title="villa04"><span><img src="data1/tooltips/villa04.jpg" alt="villa04"/>4</span></a>
+		<a href="#" title="villis"><span><img src="data1/tooltips/villis.jpg" alt="villis"/>5</span></a>
+		<a href="#" title="viveros"><span><img src="data1/tooltips/viveros.jpg" alt="viveros"/>6</span></a>
+		<a href="#" title="viveros2"><span><img src="data1/tooltips/viveros2.jpg" alt="viveros2"/>7</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">responsive slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+<p>&nbsp;</p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="https://www.dondeir.com/2016/11/villa-iluminada-atlixco/" target="_self" data-role="button" >
+<h2>Link fuente</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Exconvento : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('5278','','imagenes/villa04.jpg',1)"><img src="imagenes/uminada.jpg" width="300" height="348" id="5278"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2><strong>Viveros Cabrera</strong></h2>
+  <p>En el año 2005 empezó la formación del grupo  a través de reuniones para establecer políticas y reglamentos de la futura empresa.</p>
+  Actualmente  <em>MEGAVIVEROS</em>  no solo es la comercializadora que conocen  atrás de ella se encuentra el esfuerzo de sus integrantes como grupo y colaboradores por lo que cuenta con una superficie de 1 hectárea  para la comercializadora y aproximadamente  11 hectáreas para producción<strong>.</strong> 
+  <h1>&nbsp;</h1>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="http://www.megaviveros.com.mx/nosotros.html" target="_self" data-role="button" >
+<h2>Link fuente</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Viveros  : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('45','','imagenes/viveros3.JPG',1)"><img src="imagenes/viveros.jpg" width="346" height="273" id="45"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Viveros  : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('3958','','imagenes/viveros2.jpg',1)"><img src="imagenes/viveros4.jpeg" width="349" height="334" id="3958"></a></p>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2><strong>Historia deAtlixco</strong></h2>
+  <p>Hacia el año 1100 A.C. el valle de Atlixco se hallaba ocupado por pobladores de origen <a href="http://es.wikipedia.org/w/index.php?title=Teochichimeca&action=edit&redlink=1" title="Teochichimeca (aún no redactado)">Teochichimeca</a>, <a href="http://es.wikipedia.org/wiki/Chichimeca" title="Chichimeca">Chichimeca</a> y <a href="http://es.wikipedia.org/w/index.php?title=Xicalancas&action=edit&redlink=1" title="Xicalancas (aún no redactado)">Xicalancas</a> que bajo el dominio de la gran <a href="http://es.wikipedia.org/wiki/Tenochtitlan" title="Tenochtitlan">Tenochtitlan</a>, se asentaron primeramente al poniente del cerro de San Miguel, hoy Solares Grandes.</p>
+  <p>Estos primeros pueblos fundaron así Quaquechollan (Águila que huye) y que tiempo después llamaron Acapetlahuacan, &ldquo;Lugar de división del señorío&rdquo;. Su posición geográfica hizo que fuera escenario de luchas entre los diversos grupos indígenas que estaban asentados en los alrededores.</p>
+  <p>La nueva población que fundaron fue también llamada Quauhquechollan, pero para confundirla con su antiguo asentamiento la denominaron Huehue Quauhquechollan, es decir la &ldquo;antigua&rdquo; o la &ldquo;vieja&rdquo; Quauhquechollan A la llegada de los españoles, el poblado indígena que existía era Acapetlahuacan.</p>
+  <p>Al crecer la comunidad española, se realizaron las gestiones necesarias ante la Corona para que se les autorizara la fundación de la Villa de Carrión. Don Pedro del Castillo Maldonado y <strong>Cristóbal Ruiz Cabrera</strong> fundaron la Villa de Carrión, hoy Atlixco, pasando a ser los primeros Alcaldes Ordinarios.</p>
+  <p>La fertilidad del Valle hizo que la Villa de Carrión pronto fuera una importante zona agrícola, convirtiéndose ya para principios de <a href="http://es.wikipedia.org/wiki/Siglo_XVII" title="Siglo XVII">siglo XVII</a> en el primer granero de la <a href="http://es.wikipedia.org/wiki/Nueva_Espa%C3%B1a" title="Nueva España">Nueva España</a> lo que llamó la atención de órdenes religiosas como la de los <a href="http://es.wikipedia.org/wiki/Franciscanos" title="Franciscanos">franciscanos</a>, <a href="http://es.wikipedia.org/wiki/Agustinos" title="Agustinos">agustinos</a>, <a href="http://es.wikipedia.org/wiki/Carmelitas" title="Carmelitas">carmelitas</a>, <a href="http://es.wikipedia.org/wiki/Mercedarios" title="Mercedarios">mercedarios</a>, <a href="http://es.wikipedia.org/wiki/Juaninos" title="Juaninos">juaninos</a> y la de las monjas <a href="http://es.wikipedia.org/wiki/Clarisas" title="Clarisas">clarisas</a>, que llegaron hasta el valle para edificar sus conventos.</p>
+  <p>El 4 de mayo de 1862 un día antes de la <a href="http://es.wikipedia.org/wiki/Batalla_de_Puebla" title="Batalla de Puebla">Batalla de Puebla</a> los atlixquenses repelieron el ataque de las tropas conservadoras de <a href="http://es.wikipedia.org/wiki/Leonardo_M%C3%A1rquez" title="Leonardo Márquez">Leonardo Márquez</a> obligándolo a retirarse y de esta forma se evitó que sus tropas llegaran a reforzar a los franceses en Puebla siendo este un factor importante para alcanzar la victoria al día siguiente, este hecho histórico se conoce como la <a href="http://es.wikipedia.org/wiki/Batalla_de_Atlixco" title="Batalla de Atlixco">Batalla de Atlixco</a>.</p>
+  <p>Por lo cual, el gobierno de Juárez consideró que sin el triunfo del 4 de Mayo en Atlixco no hubiera sido posible la victoria de la batalla de Puebla en los Fuertes de Loreto, el 5 de mayo de 1862. Por este motivo, el 20 de noviembre de 1998, el Congreso del Estado de Puebla declaró a Atlixco Heroica Ciudad.</p>
+  <p>El 26 de noviembre de 1998 el H. Congreso del Estado declaró Heroica a la Ciudad de Atlixco.</p>
+  <p>&nbsp;</p>
+<p>&nbsp;</p>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<h2><a href="http://atlixco.gob.mx/historia-de-atlixco" target="_self">Link fuente</a></h2>
+ 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Atlixco  : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('0011','','imagenes/hi2.jpg',1)"><img src="imagenes/hi1.jpg" width="288" height="273" id="0011"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>Atlixco  : </p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('002','','imagenes/hi4.jpg',1)"><img src="imagenes/hi3.jpg" width="273" height="292" id="002"></a></p>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2><strong>Restaurantes</strong></h2>
+  <p>Vica Cocina de Region:</p>
+  <p>Si lo que buscas es probar algo completamente diferente este es el lugar indicado. Un establecimiento sumamente acogedor te está esperando en <strong>Atlixco</strong> con la única condición de que te atrevas a <strong>probar sabores</strong> a los que tu paladar no está acostumbrado. Vica es una propuesta gastronómica busca re valorar los productos de la región. Es así que ha creado una carta donde los protagonistas son los ingredientes comprados directamente a los productores del área.</p>
+  <div align="center">
+  <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="https://www.tripadvisor.com.mx/Restaurant_Review-g1941253-d10296583-Reviews-VICA_Restaurante-Atlixco_Central_Mexico_and_Gulf_Coast.htmll" target="_self" data-role="button" >
+<h2>Link fuente</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>&nbsp;</p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('005','','imagenes/maxresdefault.jpg',1)"><img src="imagenes/ficus.jpg" width="262" height="314" id="005"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>&nbsp;</p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('0006','','imagenes/oot.jpg',1)"><img src="imagenes/nmfg.jpg" width="305" height="246" id="0006"></a></p>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2 align="center"><strong>Monumentos</strong></h2>
+  <div align="center">
+    <div style="width:40%;">
+<ul data-role="controlgroup" data-type="vertical" data-theme="b">
+<li class="ui-first-child ui-last-child">
+
+
+<li class="ui-first-child ui-last-child">
+<a href="https://es.wikipedia.org/wiki/Anexo:Monumentos_del_municipio_de_Atlixco" target="_self" data-role="button" >
+<h2>Monumentos de Atlixco</h2>
+</a> 
+
+
+
+ 
+</li>
+</li>
+</ul>
+</div>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>&nbsp;</p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('0007','','imagenes/juarez.JPG',1)"><img src="imagenes/atlixco-de-las-flores-pueblo-magico-que-celebra-a-su-cecina.jpg" width="264" height="206" id="0007"></a></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>&nbsp;</p>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('008','','imagenes/ghgf.jpg',1)"><img src="imagenes/ger.jpg" width="263" height="261" id="008"></a></p>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina9" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar"data-back-btn-theme="b">
+  <h2 align="center"><strong>Oscar Oaxaca Telez</strong></h2>
+  <div align="center">
+    <div style="width:40%;">      </div>
+  </div>
+<p>Nombre : Oscar Oaxaca Telez</p>
+<p>Edad:18 años</p>
+<p>Escuela : Cbtis16 Atlixco, Pue.</p>
+<p>&nbsp;</p>
+</div>
+
+
+<div data-role="main" class="ui-content">
+<div data-role="collapsible" data-content-theme="false">
+<h1>Imagen</h1>
+<div>
+<p>&nbsp;</p>
+<p align="center"><img src="imagenes/13076773_224583781247717_8982193679497891499_n.jpg" width="285" height="259" alt="uy"></p>
+<div align="center"><br>
+</div>
+</div>
+<div></div>
+</div>
+</div>
+<div data-role="main" class="ui-content"> </div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+  <h4>Guia turistica</h4>
+</div>
+</div>
+
+</div>
+</div>
+</body>
+</html>
